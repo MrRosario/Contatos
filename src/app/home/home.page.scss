@@ -12,6 +12,6 @@ ion-item{
         font-size: 14px;
     }
 }
-ion-item:hover{
-    --ion-background-color: #FFDAB9;
+ion-item:active{
+    --ion-background-color: #D3D3D3;
 }
