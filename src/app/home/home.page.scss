@@ -1,0 +1,17 @@
+.pessoa{
+    border-radius: 20px;
+    border: 1px solid #000;
+    width: 40px;
+    height: 40px;
+}
+ion-item{
+    h2{
+        font-weight: bold;
+    }
+    p{
+        font-size: 14px;
+    }
+}
+ion-item:hover{
+    --ion-background-color: #FFDAB9;
+}

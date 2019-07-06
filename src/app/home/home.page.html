@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar color="danger">
+    <ion-title>Contatos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content >
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" (click)="presentModal()">
+    <ion-fab-button color="danger">
+      <ion-icon name="add"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  
+  <ion-item *ngFor="let dado of dados" class="item-contato" (click)="presentActionSheet(dado.id)">
+    <ion-icon class="pessoa" name="person" slot="start"></ion-icon>
+    <ion-label>
+      <h2>{{ dado.nome }}</h2>
+      <p>{{ dado.email }}</p>
+      <p>{{ dado.telefone}}</p>
+    </ion-label>
+  </ion-item>
+    
+</ion-content>
+  
